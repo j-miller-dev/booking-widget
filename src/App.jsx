@@ -14,6 +14,7 @@ import {
 } from "@material-ui/core";
 import { PhotoCamera } from "@material-ui/icons";
 import Checkout from "./Checkout";
+
 import ReactDOM from "react-dom/client";
 
 import useStyles from "./styles";
