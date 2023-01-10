@@ -8,6 +8,9 @@ import Checkbox from "@mui/material/Checkbox";
 export default function AddressForm() {
   return (
     <React.Fragment>
+      <Typography variant="h5" gutterBottom>
+        Thursday, 12th of January at 1pm
+      </Typography>
       <Typography variant="h6" gutterBottom>
         Your Contact Details
       </Typography>

@@ -7,11 +7,15 @@ import { CalendarPicker } from "@mui/x-date-pickers/CalendarPicker";
 import { MonthPicker } from "@mui/x-date-pickers/MonthPicker";
 import { YearPicker } from "@mui/x-date-pickers/YearPicker";
 
-const minDate = dayjs("2020-01-01T00:00:00.000");
+const minDate = dayjs("2022-12-20T00:00:00.000");
 const maxDate = dayjs("2034-01-01T00:00:00.000");
 
 export default function SubComponentsPickers() {
   const [date, setDate] = React.useState(dayjs("2022-12-30"));
+
+  const handleClick = (event) => {
+    console.log(event);
+  };
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
@@ -20,6 +24,7 @@ export default function SubComponentsPickers() {
           <CalendarPicker
             date={date}
             onChange={(newDate) => setDate(newDate)}
+            onClick={handleClick}
           />
         </Grid>
       </Grid>
